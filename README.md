@@ -1,2 +1,7 @@
-# reciprocalcc
-Reciprocal LLC consulting site. Contact Brandon@reciprocalcc.com.
+# Reciprocal
+
+Consulting site for Reciprocal LLC.
+
+Contact: Brandon@reciprocalcc.com
+
+Static site. `index.html` is the whole page.

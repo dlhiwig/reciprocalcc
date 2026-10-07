@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reciprocal — Consulting for businesses that are ready to decide</title>
+  <meta name="description" content="Reciprocal is a consulting LLC. We work with startups, professional firms, and established companies on the decisions that move the business." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@360;460;560&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23141210' width='32' height='32'/%3E%3Cpath d='M8 16h16M16 8v16' stroke='%23c4a574' stroke-width='1.6'/%3E%3C/svg%3E" />
+  <style>
+    :root {
+      --ink: #141210;
+      --ink-soft: #3a342c;
+      --paper: #f4efe6;
+      --paper-2: #ebe4d6;
+      --line: #d8cfbf;
+      --copper: #8d5a32;
+      --cream: #faf7f2;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Outfit, "Segoe UI", sans-serif;
+      font-weight: 360;
+      line-height: 1.55;
+      font-size: 17px;
+    }
+    a { color: inherit; }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+    header {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(244, 239, 230, 0.9);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 68px;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; letter-spacing: 0.14em; text-transform: uppercase; font-size: 13px; font-weight: 560; }
+    .mark { width: 22px; height: 22px; border: 1.5px solid var(--ink); border-radius: 50%; position: relative; }
+    .mark:before, .mark:after { content: ""; position: absolute; background: var(--copper); }
+    .mark:before { width: 10px; height: 1.5px; left: 5px; top: 9px; }
+    .mark:after { width: 1.5px; height: 10px; left: 9px; top: 5px; }
+    nav a { text-decoration: none; margin-left: 22px; font-size: 14px; color: var(--ink-soft); }
+    nav a.cta {
+      background: var(--ink); color: var(--paper); padding: 9px 14px; border-radius: 999px;
+    }
+    .hero { padding: 72px 0 36px; display: grid; grid-template-columns: 1.4fr 0.8fr; gap: 48px; align-items: end; }
+    .kicker { letter-spacing: 0.18em; text-transform: uppercase; font-size: 12px; color: var(--copper); font-weight: 560; }
+    h1 {
+      font-family: "Instrument Serif", Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(44px, 6.4vw, 78px);
+      line-height: 0.92;
+      letter-spacing: -0.03em;
+      margin: 14px 0 18px;
+    }
+    h1 em { font-style: italic; color: var(--copper); }
+    .lede { font-size: 19px; max-width: 540px; color: var(--ink-soft); }
+    .actions { display: flex; gap: 12px; margin-top: 28px; flex-wrap: wrap; }
+    .btn {
+      display: inline-block; text-decoration: none; border-radius: 999px; padding: 12px 18px; font-size: 15px; font-weight: 560;
+    }
+    .btn-dark { background: var(--ink); color: var(--paper); }
+    .btn-line { border: 1px solid var(--ink); }
+    .side-card {
+      background: var(--ink); color: var(--paper); padding: 28px; border-radius: 18px;
+    }
+    .side-card p { margin: 8px 0 0; color: #d9d0c3; font-size: 15px; }
+    .side-card strong { font-family: "Instrument Serif", Georgia, serif; font-size: 28px; font-weight: 400; display: block; }
+    .bands { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .bands div { padding: 22px 8px; }
+    .bands div + div { border-left: 1px solid var(--line); padding-left: 22px; }
+    .bands span { display: block; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--copper); }
+    section { padding: 84px 0; }
+    h2 {
+      font-family: "Instrument Serif", Georgia, serif;
+      font-weight: 400; font-size: clamp(34px, 4vw, 52px); line-height: 1; letter-spacing: -0.03em; margin: 10px 0 14px;
+    }
+    .section-intro { max-width: 620px; color: var(--ink-soft); }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 36px; }
+    .card {
+      background: var(--cream); border: 1px solid var(--line); border-radius: 16px; padding: 22px; min-height: 220px;
+    }
+    .card h3 { margin: 18px 0 8px; font-size: 20px; font-weight: 560; }
+    .num { font-family: "Instrument Serif", Georgia, serif; font-style: italic; color: var(--copper); font-size: 22px; }
+    .who { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 32px; }
+    .who article { padding: 28px; border-radius: 16px; }
+    .who .yes { background: #efe6d4; }
+    .who .no { background: var(--ink); color: var(--paper); }
+    .who li { margin: 8px 0; }
+    .steps { margin-top: 28px; display: grid; gap: 0; }
+    .step { display: grid; grid-template-columns: 120px 1fr; gap: 18px; padding: 22px 0; border-top: 1px solid var(--line); }
+    .step b { font-family: "Instrument Serif", Georgia, serif; font-size: 26px; font-weight: 400; }
+    form { display: grid; gap: 12px; margin-top: 18px; }
+    input, textarea, select {
+      width: 100%; font: inherit; padding: 12px 14px; border-radius: 10px; border: 1px solid var(--line); background: white; color: var(--ink);
+    }
+    textarea { min-height: 120px; resize: vertical; }
+    footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--ink-soft); font-size: 14px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    .start-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; }
+    button.btn { border: 0; cursor: pointer; }
+    @media (max-width: 800px) {
+      .hero, .grid-3, .who, .bands, .step, .start-grid { grid-template-columns: 1fr; }
+      .bands div + div { border-left: 0; padding-left: 8px; border-top: 1px solid var(--line); }
+      nav a:not(.cta) { display: none; }
+      section { padding: 56px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top"><span class="mark"></span> Reciprocal</a>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#who">Who</a>
+        <a href="#how">How</a>
+        <a class="cta" href="#start">Start a conversation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="wrap hero">
+      <div>
+        <div class="kicker">Consulting LLC</div>
+        <h1>Advice that has to earn its way <em>back</em>.</h1>
+        <p class="lede">Reciprocal works with startups, professional firms, and established companies on the operating decisions that actually move the business. Clear scope. A named outcome. Work that leaves the client stronger than when it started.</p>
+        <div class="actions">
+          <a class="btn btn-dark" href="mailto:Brandon@reciprocalcc.com">Email Brandon</a>
+          <a class="btn btn-line" href="#work">See the engagements</a>
+        </div>
+      </div>
+      <aside class="side-card">
+        <span class="kicker" style="color:#c4a574">Direct line</span>
+        <strong>Brandon</strong>
+        <p>Principal. Every engagement starts with a conversation, not a proposal mill.</p>
+        <p><a href="mailto:Brandon@reciprocalcc.com">Brandon@reciprocalcc.com</a></p>
+      </aside>
+    </div>
+
+    <div class="wrap bands">
+      <div><span>Startups</span> From first repeatable offer to the operating system that can survive growth.</div>
+      <div><span>Professional firms</span> Practices that sell judgment, and need the business around that judgment to keep up.</div>
+      <div><span>Established companies</span> Larger organizations with a specific decision, a stalled initiative, or a founder bottleneck.</div>
+    </div>
+
+    <section id="work">
+      <div class="wrap">
+        <div class="kicker">Engagements</div>
+        <h2>Three ways to work. Nothing open-ended.</h2>
+        <p class="section-intro">Reciprocal is not staff augmentation and not a slide factory. Each engagement has a start, a decision, and a handoff.</p>
+        <div class="grid-3">
+          <article class="card">
+            <div class="num">01</div>
+            <h3>Diagnostic</h3>
+            <p>Two weeks. One problem. A written decision memo the client keeps either way: what is true, what to do next, and what not to touch.</p>
+          </article>
+          <article class="card">
+            <div class="num">02</div>
+            <h3>Build</h3>
+            <p>Ninety days on a single outcome. Offer, pricing, sales motion, operating cadence, or a launch. Weekly working session. Fixed scope.</p>
+          </article>
+          <article class="card">
+            <div class="num">03</div>
+            <h3>Retainer</h3>
+            <p>Ongoing judgment for owners who already know the work. A monthly seat, a quarterly reset of the problem, and a clean way to stop.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="who" style="padding-top:0">
+      <div class="wrap">
+        <div class="kicker">Fit</div>
+        <h2>Built for operators, not spectators.</h2>
+        <div class="who">
+          <article class="yes">
+            <h3>A good fit</h3>
+            <ul>
+              <li>A startup with a real offer and a decision it keeps postponing.</li>
+              <li>A professional firm whose delivery is strong and whose business system is not.</li>
+              <li>A larger company with an owner on the inside and a deadline.</li>
+            </ul>
+          </article>
+          <article class="no">
+            <h3>Not a fit</h3>
+            <ul>
+              <li>Hourly staff cover with no decision rights.</li>
+              <li>Strategy with nobody on the client side to implement it.</li>
+              <li>Work where success cannot be named before kickoff.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" style="background:#efe6d4">
+      <div class="wrap">
+        <div class="kicker">How it runs</div>
+        <h2>Reciprocity is the term, not the slogan.</h2>
+        <div class="steps">
+          <div class="step"><b>01</b><div><strong>A direct conversation.</strong> Email Brandon with the decision in front of you. If it is not a fit, you hear that early.</div></div>
+          <div class="step"><b>02</b><div><strong>A named outcome.</strong> Scope, owner on your side, and what “done” means, written before work starts.</div></div>
+          <div class="step"><b>03</b><div><strong>A handoff you can run.</strong> The point of the engagement is that the client does not need Reciprocal to keep the result.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="start">
+      <div class="wrap start-grid">
+        <div>
+          <div class="kicker">Start</div>
+          <h2>Tell Brandon the decision.</h2>
+          <p class="section-intro">A short note is enough. Company, stage, and the problem you want settled. The form opens your email client to Brandon@reciprocalcc.com.</p>
+        </div>
+        <form action="mailto:Brandon@reciprocalcc.com" method="post" enctype="text/plain">
+          <input name="name" placeholder="Name" required />
+          <input name="company" placeholder="Company" />
+          <select name="stage">
+            <option>Startup</option>
+            <option>Professional firm</option>
+            <option>Established company</option>
+          </select>
+          <textarea name="decision" placeholder="The decision or problem" required></textarea>
+          <button class="btn btn-dark" type="submit">Email Brandon</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="wrap">
+    <footer>
+      <div>Reciprocal LLC · Consulting</div>
+      <div><a href="mailto:Brandon@reciprocalcc.com">Brandon@reciprocalcc.com</a></div>
+    </footer>
+  </div>
+</body>
+</html>
