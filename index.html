@@ -135,6 +135,8 @@
     .credential-badge { flex: 0 1 240px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 16px; padding: 22px; border: 1px solid var(--line); border-radius: 16px; background: white; text-align: center; }
     .credential-badge img { display: block; width: 100%; max-width: 190px; height: 190px; object-fit: contain; }
     .credential-badge span { color: var(--navy); font-size: 13px; font-weight: 700; line-height: 1.5; }
+    .credential-badge-group { flex-basis: 560px; max-width: 100%; }
+    .credential-badge-group img { max-width: 100%; height: auto; }
     @media (max-width: 900px) {
       .hero-grid, .product-card, .opportunities, .about-grid, .contact-grid { grid-template-columns: 1fr; }
       .hero-grid { gap: 38px; padding: 76px 0; }
@@ -358,6 +360,10 @@
           <li class="credential-badge">
             <img src="assets/badges/rotary.webp" width="718" height="370" loading="lazy" decoding="async" alt="Rotary International" />
             <span>Rotary International</span>
+          </li>
+          <li class="credential-badge credential-badge-group">
+            <img src="assets/badges/security-compliance.webp" width="1000" height="819" loading="lazy" decoding="async" alt="AICPA SOC; ISO 27001 Information Security Management Certified; GDPR; HIPAA Compliant" />
+            <span>Security &amp; Compliance</span>
           </li>
         </ul>
       </div>
