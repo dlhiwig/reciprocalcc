@@ -1,7 +1,20 @@
-# Reciprocal
+# Reciprocal Commerce Community (RCC)
 
-Consulting site for Reciprocal LLC.
+Corporate website and brand assets for **Reciprocal Commerce Community**.
 
-Contact: Brandon@reciprocalcc.com
+**Brand direction:** Partnership Bridge  
+**Tagline:** Partnerships That Produce Results.  
+**Primary colors:** Navy `#173954` and Teal `#159D96`.
 
-Static site. `index.html` is the whole page.
+## Website
+
+This is a static site. `index.html` is the complete website and can be deployed on GitHub Pages, Vercel, or any static hosting provider. No build step is required.
+
+## Brand assets
+
+See [`BRAND.md`](BRAND.md) for the brand system, usage guidance, and LinkedIn specifications. The `assets/brand/` directory contains editable SVG logo artwork and the LinkedIn cover and company logo sources. A 4200 x 700 PNG cover export is supplied separately for direct upload to LinkedIn.
+
+## Contact
+
+Brandon@reciprocalcc.com  
++1 248-697-6516
