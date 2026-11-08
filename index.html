@@ -128,6 +128,13 @@
     .footer-brand img { width: 38px; height: 28px; }
     .footer-links { display: flex; gap: 18px; }
     .footer-links a { color: #d2dfe5; text-decoration: none; }
+
+    .credentials { padding: 44px 0; background: var(--paper); border-top: 1px solid var(--line); }
+    .credentials h2 { margin: 0 0 26px; font-size: 24px; text-align: center; letter-spacing: -.025em; }
+    .credential-badges { display: flex; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 24px; margin: 0; padding: 0; list-style: none; }
+    .credential-badge { flex: 0 1 240px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 16px; padding: 22px; border: 1px solid var(--line); border-radius: 16px; background: white; text-align: center; }
+    .credential-badge img { display: block; width: 100%; max-width: 190px; height: 190px; object-fit: contain; }
+    .credential-badge span { color: var(--navy); font-size: 13px; font-weight: 700; line-height: 1.5; }
     @media (max-width: 900px) {
       .hero-grid, .product-card, .opportunities, .about-grid, .contact-grid { grid-template-columns: 1fr; }
       .hero-grid { gap: 38px; padding: 76px 0; }
@@ -329,6 +336,22 @@
           <a href="tel:+12486976516">+1 248-697-6516</a>
           <p>South Lyon, Michigan</p>
         </aside>
+      </div>
+    </section>
+
+    <section class="credentials" id="credentials" aria-labelledby="credentials-title">
+      <div class="container">
+        <h2 id="credentials-title">Affiliations &amp; Certifications</h2>
+        <ul class="credential-badges">
+          <li class="credential-badge">
+            <img src="assets/badges/sba-sdvosb-certified.webp" width="448" height="550" loading="lazy" decoding="async" alt="U.S. Small Business Administration: Service-Disabled Veteran-Owned Certified" />
+            <span>SBA Service-Disabled Veteran-Owned<br />Small Business</span>
+          </li>
+          <li class="credential-badge">
+            <img src="assets/badges/vob-verified-member.webp" width="532" height="478" loading="lazy" decoding="async" alt="Veteran Owned Business directory: Verified Proud Member" />
+            <span>Veteran Owned Business<br />Directory Member</span>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
