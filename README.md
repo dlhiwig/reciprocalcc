@@ -18,3 +18,7 @@ See [`BRAND.md`](BRAND.md) for the brand system, usage guidance, and LinkedIn sp
 
 Brandon@reciprocalcc.com  
 +1 248-697-6516
+
+## Credentials claims
+
+Homepage and Security & Trust credential text is driven by `assets/credentials.json`. Edit that file to add, revise, or remove claims. Do not invent UEI, CAGE, NAICS, certificate numbers, or audit dates.
